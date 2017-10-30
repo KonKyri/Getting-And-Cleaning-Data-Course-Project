@@ -52,7 +52,7 @@ processed_data <- melt(result_data, id  = c("Subject", "Activity","Category")) #
 
 new_data <- dcast(processed_data, Subject + Activity ~ variable, mean) # Casting the data frame
 
-View(new_data)
+View(new_data) # View the new table
 
 
 
