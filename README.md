@@ -9,7 +9,7 @@
 
 * http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 
-### Purpose of the script
+### Summary of the script
 * Merge the training and the test sets to create one data set
 * Extract only the measurements on the mean and standard deviation for each measurement.
 * Use descriptive activity names to name the activities in the data set
