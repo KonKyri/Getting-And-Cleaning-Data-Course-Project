@@ -15,3 +15,14 @@
 * Use descriptive activity names to name the activities in the data set
 * Appropriately label the data set with descriptive variable names.
 * Creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+
+### Strategy
+* Download the files and unzip them in our working directory.
+* Load the training and the test sets.
+* Assign column names to the data frames according to the features.txt file.
+* Add columns to the data frames according to the Subject,Category and Activity of each row.
+* Replace the values of the Activity variable with the proper descriptions.
+* Merge the two data frame into one big data frame
+* Retrieve the collumns which refer to mean and standard deviation by using the grepl function
+* Create a new tidy data set with the average of each variable for each activity and each subject with the help of melt and dcast functions.
+
