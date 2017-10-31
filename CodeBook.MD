@@ -11,6 +11,29 @@ For each record it is provided:
 * Its activity label. 
 * An identifier of the subject who carried out the experiment.
 
+### Signals
+These signals were used to estimate variables of the feature vector for each pattern:  
+'-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
+
+* tBodyAcc-XYZ
+* tGravityAcc-XYZ
+* tBodyAccJerk-XYZ
+* tBodyGyro-XYZ
+* tBodyGyroJerk-XYZ
+* tBodyAccMag
+* tGravityAccMag
+* tBodyAccJerkMag
+* tBodyGyroMag
+* tBodyGyroJerkMag
+* fBodyAcc-XYZ
+* fBodyAccJerk-XYZ
+* fBodyGyro-XYZ
+* fBodyAccMag
+* fBodyAccJerkMag
+* fBodyGyroMag
+* fBodyGyroJerkMag
+
+
 ### Data Files
 * x_train.txt
 * y_train.txt
@@ -21,12 +44,24 @@ For each record it is provided:
 * features.txt
 * activity_labels.txt
 
-### Strategy
-* Download the files and unzip them in our working directory.
-* Load the training and the test sets.
-* Assign column names to the data frames according to the features.txt file.
-* Add columns to the data frames according to the Subject,Category and Activity of each row.
-* Replace the values of the Activity variable with the proper descriptions.
-* Merge the two data frame into one big data frame
-* Retrieve the collumns which refer to mean and standard deviation by using the grepl function
-* Create a new tidy data set with the average of each variable for each activity and each subject with the help of melt and dcast functions.
+### Variables
+
+The set of variables that were estimated from these signals are: 
+
+* mean(): Mean value
+* std(): Standard deviation
+* mad(): Median absolute deviation 
+* max(): Largest value in array
+* min(): Smallest value in array
+* sma(): Signal magnitude area
+* energy(): Energy measure. Sum of the squares divided by the number of values. 
+* iqr(): Interquartile range 
+* entropy(): Signal entropy
+* arCoeff(): Autorregresion coefficients with Burg order equal to 4
+* correlation(): correlation coefficient between two signals
+* maxInds(): index of the frequency component with largest magnitude
+* meanFreq(): Weighted average of the frequency components to obtain a mean frequency
+* skewness(): skewness of the frequency domain signal 
+* kurtosis(): kurtosis of the frequency domain signal 
+* bandsEnergy(): Energy of a frequency interval within the 64 bins of the FFT of each window.
+* angle(): Angle between to vectors.
