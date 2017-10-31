@@ -54,5 +54,5 @@ new_data <- dcast(processed_data, Subject + Activity ~ variable, mean) # Casting
 
 View(new_data) # View the new table
 
-write.table(new_data, './tidy_data.txt',row.names=TRUE,sep='\t') # Save as a txt file
+write.table(new_data, './tidy_data.txt',row.names = FALSE,sep='\t') # Save as a txt file
 
